@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/GuessingGame.js"></script>
+    <script src="js/jqueryGuessingGame.js"></script>
+  </head>
+  <body>
+
+      <div id='app' class="container-fluid">
+        <div id='headers' class="center">
+          <h1> Guessing Game</h1>
+          <h2> Guess a number between 1 - 100 </h2>
+        </div>
+
+        <div id='main' class="center">
+          <div id='input-parent'>
+           <input type="number"  id="guessInput" placeholder="#" maxlength="3" autofocus></input>
+           <button type="submit" id="submitguess" class="btn btn-lg btn-primary">Guess</button>
+          </div>
+
+          <div id='guesses' class="center">
+            <ul id="guessList"  class="guess"> 
+                <li>33</li>
+                <li>4</li>
+                <li>5</li>
+                <li>10</li>
+            </ul>
+          </div>
+
+          <div id="menu-btns" class="center">
+            <button type="reset" id="reset" class="btn btn-lg">Reset</button>
+            <button type="hint" id="hint" class="btn btn-lg">Hint</button>
+          </div>
+        </div>
+      </div>
+
+    <div id='footer' class="footer">
+        <div class="container-fluid row">
+          <div class='col-md-4'>
+            <img src='img/fa-logo@2x.png'></img>
+          </div>
+
+          <div class="col-md-4">
+            <h4>Project by Orange Nori in Chocolate</h4>
+          </div>
+
+          <div class='col-md-4'>
+            <img src='img/grace_hopper_academy.png'></img>
+          </div>
+
+
+        </div>
+    </div>
+  </body>
+</html>
