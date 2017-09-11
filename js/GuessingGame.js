@@ -42,7 +42,7 @@ Game.prototype.isLower = function(){
 
 Game.prototype.playersGuessSubmission = function(number){
     this.playersGuess = number;
-    if(number <= 0 ||number >= 101 || typeof number !== "number"){
+    if(number <= 0 ||number >= 101 || typeof number !== "number" || number === ""){
         throw ("That is an invalid guess.");
     }
     return this.checkGuess();
@@ -53,8 +53,8 @@ Game.prototype.checkGuess = function(){
     }
     if (this.pastGuesses.indexOf(this.playersGuess) > -1){
         return "You have already guessed that number.";
-    }
-    this.pastGuesses.push(this.playersGuess);    
+    }   
+    this.pastGuesses.push(this.playersGuess);   
 
     if (this.pastGuesses.length >= 4){
         return "You Lose.";
